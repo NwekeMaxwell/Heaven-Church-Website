@@ -1,0 +1,100 @@
+.section-about {
+  background-color: $white2;
+  padding: 25rem 0;
+  margin-top: -20vh;
+
+  @include respond(tab-port) {
+    padding: 20rem 0;
+  }
+}
+
+.section-features {
+  padding: 25rem 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($lightgreen, 0.7),
+      rgba($darkgreen, 0.7)
+    ),
+    url(../img/BS.jpeg);
+  background-size: cover;
+
+  transform: skewY(-7deg);
+  margin-top: -12rem;
+
+  & > * {
+    transform: skewY(7deg);
+  }
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
+}
+
+.section-tours {
+  padding: 25rem 0 10rem 0;
+  background-color: $white2;
+  margin-top: -15rem;
+
+  @include respond(tab-port) {
+    padding: 20rem 0 5rem 0;
+  }
+}
+.section-story {
+  position: relative;
+  padding: 15rem 0;
+
+  @include respond(tab-port) {
+    padding: 12rem 0;
+  }
+}
+
+.section-booking {
+  padding: 25rem 0;
+  background-image: linear-gradient(to right bottom, ($lightgreen, $darkgreen));
+
+  @include respond(tab-port) {
+    padding: 20rem 0;
+  }
+}
+.book {
+  background-image: linear-gradient(
+      105deg,
+      rgba($white, 0.8) 0%,
+      rgba($white, 0.8) 50%,
+      transparent 50%
+    ),
+    url(../img/altar.jpeg);
+  background-size: cover;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($black, 0.2);
+
+  @include respond(tab-land) {
+    background-image: linear-gradient(
+        105deg,
+        rgba($white, 0.8) 0%,
+        rgba($white, 0.8) 65%,
+        transparent 65%
+      ),
+      url(../img/altar.jpeg);
+    background-size: cover;
+  }
+
+  @include respond(tab-port) {
+    background-image: linear-gradient(
+        to right,
+        rgba($white, 0.8) 0%,
+        rgba($white, 0.8) 100%
+      ),
+      url(../img/altar.jpeg);
+    background-size: cover;
+  }
+  &-form {
+    width: 50%;
+    padding: 4.5rem;
+    @include respond(tab-land) {
+      width: 65%;
+    }
+    @include respond(tab-port) {
+      width: 100%;
+    }
+  }
+}

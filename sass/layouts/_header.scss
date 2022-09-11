@@ -1,0 +1,40 @@
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($lightgreen, 0.7),
+      rgba($darkgreen, 0.7)
+    ),
+    url(../img/church.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  @include respond(phone) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
+
+  &_logobox {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+  }
+  &_logo {
+    height: 70px;
+    opacity: 0.7;
+  }
+  &_textbox {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backface-visibility: hidden;
+    @include respond(phone) {
+      top: 45%;
+    }
+  }
+}
