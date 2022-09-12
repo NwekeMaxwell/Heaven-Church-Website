@@ -1,3 +1,4 @@
 # Heaven-Church-Website
+My First HTML|CSS Project
 Practicing CSS Animations, CSS Grids and Responsive Web Design.
-A church website using ONLY HTML and CSS!! [see footer]
+[see footer]
